@@ -1,34 +1,53 @@
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 16px;
+  --input-radius: 4px;
+  --tab-radius-active: 4px 4px 0 0;
+  --checkbox-radius: 0px;
+  --toggle-radius: 16px;
+  --toggle-thumb-radius: 50%;
+  --slider-thumb-radius: 50%;
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+  display: none;
+}
+
+button {
+  border-radius: var(--radius-l);
+}
+
+select.dropdown {
+  border-radius: var(--radius-m);
 }
 
 svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  rx: 0;
+  ry: 0;
 }
 
 .menu {
-	padding: var(--size-2-1);
+  padding: var(--size-2-1);
 }
 
 .menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
+  padding: var(--size-4-1) var(--size-4-2);
 }
 
 .menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+  margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.theme-dark {
+  --background-primary: #2e2f35;
+  --background-secondary: #464753;
+}
+
+.theme-light {
+  --background-primary: #f6f6f6;
+  --background-secondary: #e4e4e4;
 }
