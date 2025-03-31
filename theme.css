@@ -8,6 +8,13 @@ body {
   --toggle-radius: 16px;
   --toggle-thumb-radius: 50%;
   --slider-thumb-radius: 50%;
+
+  --h1-font: Monospace, monospace;
+  --h2-color: Monospace, monospace;
+  --h3-color: Monospace, monospace;
+  --h4-color: Monospace, monospace;
+  --h5-color: Monospace, monospace;
+  --h6-color: Monospace, monospace;
 }
 
 .workspace-tab-header.is-active::before,
@@ -45,9 +52,23 @@ svg * {
 .theme-dark {
   --background-primary: #2e2f35;
   --background-secondary: #464753;
+
+  --h1-color: hsl(201, 59%, 56%);
+  --h2-color: hsl(187, 59%, 56%);
+  --h3-color: hsl(167, 59%, 56%);
+  --h4-color: hsl(91, 59%, 56%);
+  --h5-color: hsl(71, 59%, 56%);
+  --h6-color: hsl(60, 59%, 56%);
 }
 
 .theme-light {
   --background-primary: #f6f6f6;
   --background-secondary: #e4e4e4;
+
+  --h1-color: hsl(202, 65%, 34%);
+  --h2-color: hsl(187, 65%, 34%);
+  --h3-color: hsl(167, 65%, 34%);
+  --h4-color: hsl(91, 65%, 34%);
+  --h5-color: hsl(71, 65%, 34%);
+  --h6-color: hsl(60, 65%, 34%);
 }
